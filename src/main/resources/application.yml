@@ -1,0 +1,19 @@
+#spring:
+ # security:
+  #  oauth2:
+   #   resourceserver:
+    #    jwt:
+     #     issuer-uri: http://localhost:8080/realms/myrealm
+      #    jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/certs
+          #http://localhost:8080/realms/myrealm < den pekar p? denna fast om den skulle byta namn etc s? uppdateras den
+          #en referens till den adressen.
+
+
+#server:
+  #port: 9090
+
+#jwt:
+  #auth:
+   # converter:
+    #  resource-id: myclient
+     # principle-attribute: preferred_username
